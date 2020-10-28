@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <!-- 一開始  .info>h1>span{Here's}+br+{JOANNE}^p>{Founder of “XXXD Official“}+br+{ & Graphic Designer}^ul>li*4>a[href="#"]>img -->
+    <!-- 修正後  .info>.container>h1>span{Here's}+br+{JOANNE}^p>{Founder of “XXXD Official“}+br+{ & Graphic Designer}^ul>li*4>a[href="#"]>img -->
+    <div class="info">
+        <div class="container">
+            <a href="#">
+                <h1 class="title">
+                    <span class="text-little">Here's</span>
+                    <br>
+                    JOANNE
+                </h1>
+            </a>
+            <p class="content">
+                Founder of “XXXD Official“ & Graphic Designer
+            </p>
+            <ul class="snsLink">
+                <li><a href="#"><img src="img/behance.svg" alt="behance"></a></li>
+                <li><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="img/instagram.svg" alt="instagram"></a></li>
+                <li><a href="#"><img src="img/youtube.svg" alt="youtube"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 一開始 .about>h2{About}+img+ul>li*4^ul>li*3 -->
+    <!-- 修正後 .about>h2{About}+img+ul>li*3^ul>li*3 -->
+    <div class="about">
+        <h2 class="title">About</h2>
+        <img class="profileImg" src="img/photo.png" alt="profile">
+        <ul class="profileInfo">
+            <li>Joanne Chen</li>
+            <li>1997/10/10</li>
+            <li>National Hex School Normal University Department of Visual Design</li>
+        </ul>
+        <ul class="experience">
+            <li>Founder of ‘’XXXD Official’’</li>
+            <li>Graphic Designer</li>
+            <li>Graphic Intern of Hex School</li>
+        </ul>
+    </div>
+</body>
+</html>

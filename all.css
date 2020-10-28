@@ -1,0 +1,156 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css reset */
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, p, li {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.info {
+    background-image: url('img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    width: 100%;
+    height: 958px;
+    border: 1px solid #707070;
+    display: flex;
+}
+
+.container {
+    width: 304px;
+    margin: auto;
+}
+
+.info .title {
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 94px;
+    color: white;
+    letter-spacing: 0px;
+}
+
+.info .content {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: normal;
+    color: white;
+    margin-top: 32px;
+    width: 283px;
+    margin: auto;  
+    letter-spacing: 0px; 
+}
+
+.info .snsLink {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-little {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.about {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about .title {
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.about .profileImg {
+    margin-bottom: 24px;
+} 
+
+.about ul {
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.about .profileInfo {
+    width: 413px;
+    margin-bottom: 24px;
+}
+
+.about .experience {
+    width: 384px;
+    border-top: 1px solid #000;
+    padding-top: 32px;
+}
+
+.about .experience li {
+    position: relative;
+}
+
+.about .experience li::before {
+    content: "\A";
+    border-radius:50%;
+    height: 22px;
+    width: 22px;
+    background: #891818;
+    display: inline-block;
+    margin-right: 16px;
+}
