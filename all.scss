@@ -1,0 +1,167 @@
+@import "./base";
+@import "./utils";
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.info {
+  background-image: url("img/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 356px 0 268px;
+  border: 1px solid #707070;
+  display: flex;
+  h1.title {
+    font-style: italic;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 94px;
+    color: white;
+  }
+  .text-little {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 42px;
+    color: white;
+  }
+  .content {
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+    margin-top: 32px;
+    width: 283px;
+    margin: auto;
+    letter-spacing: 0px;
+  }
+  .snsLink {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    a {
+      display: block;
+    }
+  }
+}
+
+h2.title {
+  font-size: 64px;
+  line-height: 75px;
+}
+p.content {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
+.about {
+  padding: 60px 0;
+  text-align: center;
+  .title {
+    margin-bottom: 40px;
+  }
+  .profileImg {
+    margin-bottom: 24px;
+  }
+  ul {
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+  .profileInfo {
+    width: 413px;
+    margin-bottom: 24px;
+  }
+  .experience {
+    width: 384px;
+    border-top: 1px solid #000;
+    padding-top: 32px;
+    li {
+      position: relative;
+      &::before {
+        content: "";
+        border-radius: 50%;
+        height: 22px;
+        width: 22px;
+        background: #891818;
+        display: inline-block;
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.brand {
+  background-color: #000;
+  color: #ffffff;
+  padding: 64px 0px 160px;
+  text-align: center;
+  .title {
+    margin-bottom: 16px;
+  }
+  .subTitle {
+    font-size: 24px;
+    line-height: 42px;
+    margin-bottom: 32px;
+  }
+  .content {
+    
+    margin-bottom: 68px;
+  }
+  .imgList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .imgItem {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.works {
+  padding: 64px 0px 160px;
+  text-align: center;
+  .title {
+    margin-bottom: 24px;
+  }
+  .content {
+    margin-bottom: 56px;
+  }
+}
+
+.workList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .workItem {
+    margin-bottom: 56px;
+    figcaption {
+      text-align: center;
+      font-size: 20px;
+      line-height: 42px;
+      margin-top: 16px;
+    }
+  }
+}
+
+.contact {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 64px 0 80px;
+  .title {
+    margin-bottom: 16px;
+  }
+  .contactItems a {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

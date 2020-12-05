@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -12,238 +11,262 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* css reset */
-
 * {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-h1, h2, h3, p, li {
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-}
-
-.info {
-    background-image: url('img/banner.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center ;
-    width: 100%;
-    height: 958px;
-    border: 1px solid #707070;
-    display: flex;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
 }
 
 .container {
-    width: 304px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.info .title {
-    font-weight: 900;
-    font-size: 80px;
-    line-height: 94px;
-    color: white;
-    letter-spacing: 0px;
+.info {
+  background-image: url("img/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 356px 0 268px;
+  border: 1px solid #707070;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info h1.title {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 94px;
+  color: white;
+}
+
+.info .text-little {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 42px;
+  color: white;
 }
 
 .info .content {
-    font-size: 24px;
-    line-height: 36px;
-    color: white;
-    margin-top: 32px;
-    width: 283px;
-    margin: auto;  
-    letter-spacing: 0px; 
+  font-size: 24px;
+  line-height: 36px;
+  color: white;
+  margin-top: 32px;
+  width: 283px;
+  margin: auto;
+  letter-spacing: 0px;
 }
 
 .info .snsLink {
-    margin-top: 48px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.text-little {
-    font-size: 24px;
-    line-height: 28px;
+.info .snsLink a {
+  display: block;
+}
+
+h2.title {
+  font-size: 64px;
+  line-height: 75px;
+}
+
+p.content {
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .about {
-    padding: 60px 0;
-    text-align: center;
+  padding: 60px 0;
+  text-align: center;
 }
 
 .about .title {
-    font-size: 64px;
-    line-height: 75px;
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .about .profileImg {
-    margin-bottom: 24px;
-} 
+  margin-bottom: 24px;
+}
 
 .about ul {
-    font-size: 24px;
-    line-height: 42px;
-    font-weight: bold;
-    margin: 0 auto;
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: bold;
+  margin: 0 auto;
 }
 
 .about .profileInfo {
-    width: 413px;
-    margin-bottom: 24px;
+  width: 413px;
+  margin-bottom: 24px;
 }
 
 .about .experience {
-    width: 384px;
-    border-top: 1px solid #000;
-    padding-top: 32px;
+  width: 384px;
+  border-top: 1px solid #000;
+  padding-top: 32px;
 }
 
 .about .experience li {
-    position: relative;
+  position: relative;
 }
 
 .about .experience li::before {
-    content: "\A";
-    border-radius:50%;
-    height: 22px;
-    width: 22px;
-    background: #891818;
-    display: inline-block;
-    margin-right: 16px;
+  content: "";
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  background: #891818;
+  display: inline-block;
+  margin-right: 16px;
 }
 
 .brand {
-    background-color: #000;
-    color: #ffffff;
-    padding: 64px 360px 160px;
+  background-color: #000;
+  color: #ffffff;
+  padding: 64px 0px 160px;
+  text-align: center;
 }
 
 .brand .title {
-    font-size: 64px;
-    line-height: 75px;
-    text-align: center;
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .brand .subTitle {
-    font-size: 24px;
-    line-height: 42px;
-    text-align: center;
-    margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 42px;
+  margin-bottom: 32px;
 }
 
 .brand .content {
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-    margin-bottom: 68px;
+  margin-bottom: 68px;
 }
 
 .brand .imgList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .brand .imgList .imgItem {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .works {
-    padding: 64px 360px 160px;
+  padding: 64px 0px 160px;
+  text-align: center;
 }
 
 .works .title {
-    font-size: 64px;
-    line-height: 75px;
-    margin-bottom: 24px;
-    text-align: center;
+  margin-bottom: 24px;
 }
 
 .works .content {
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-    margin-bottom: 56px;
+  margin-bottom: 56px;
 }
 
 .workList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .workList .workItem {
-    margin-bottom: 56px;
+  margin-bottom: 56px;
 }
 
 .workList .workItem figcaption {
-    text-align: center;
-    font-size: 20px;
-    line-height: 42px;
-    margin-top: 16px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 42px;
+  margin-top: 16px;
 }
 
 .contact {
-    background-color: #000;
-    color: white;
-    text-align: center;
-    padding: 64px 0 80px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 64px 0 80px;
 }
 
 .contact .title {
-    font-size: 64px;
-    line-height: 75px;
-    margin-bottom: 16px;
-    text-align: center;
+  margin-bottom: 16px;
 }
 
-.contactItems a {
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 16px;
-    text-align: center;
-    color: white;
+.contact .contactItems a {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 16px;
+  color: white;
 }
+
+.contact .contactItems a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=all.css.map */
